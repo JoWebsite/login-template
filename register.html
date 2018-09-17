@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- GoogleFont CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- Script validation form register and Show password -->
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      function showP() {
+        var x = document.getElementById("inputpassword5");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    </script>
+
+    <!-- Web Title --> 
+    <link rel="icon" href="images/favicon.png">
+    <title>Login template</title>
+  </head>
+  <body>
+    <div class="container co">
+      
+      <!--Label for image -->
+      <header>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <img src="images/favicon.png" class="img-fluid mx-auto d-block" alt="Logo-web">
+            </div>
+          </div>
+        </div>
+      </header>
+      
+    
+      <div id="main">
+        <div class="container">
+          <!--Header -->
+          <div class="row justify-content-center guide">
+            <div class="col-md-7">
+              <hr>
+              <h1 class="blockquote text-center"><small>Sign up now</small></h1>
+            </div>
+          </div>
+          
+          <div class="row align-items-center">
+            <div class="col-md-6 offset-md-3">
+              <form class="needs-validation" action="#" method="#" novalidate>
+                <div class="form-row">
+                  <!--Input for First name -->
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" autocomplete="off" required>
+                  </div>
+                  <!--Input for Last name -->
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" autocomplete="off" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <!--Input for Username -->
+                  <div class="col-md-4 mb-3">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" autocomplete="off" required>
+                    </div>
+                  </div>
+                  <!--Input for Email -->
+                  <div class="col-md-8 mb-3">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-at"></i></span>
+                      </div>
+                      <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email address" aria-describedby="inputGroupPrepend" autocomplete="off" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <!--Input for Password -->
+                  <div class="col-md-6 mb-1">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-lock"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="inputpassword5" placeholder="Password" aria-describedby="passwordHelBlock" required>
+                    </div>
+                    <div class="helper">
+                      <label class="form-text text-muted">
+                        <input type="checkbox" onclick="showP()">Show password
+                      </label>
+                    </div>
+                  </div>
+                  <!--Input for Confirm Password-->
+                  <div class="col-md-6 mb-3">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-lock"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="inputpassword5" placeholder="Confirm password" aria-describedby="inputGroupPrepend" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <!--Input for City-->
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                  </div>
+                  <!--Input for State-->
+                  <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                  </div>
+                  <!--Input for Zip -->
+                  <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!--Terms and button submit -->
+                  <div class="form-check text-center">
+                    <input class="form-check-input" type="checkbox" value="" required>
+                    <label class="form-check-label">
+                      Agree to <a href="#">Terms & Conditions</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary" type="submit">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-7">
+            <span class="justify-content-center">
+              <strong>Copyright</strong> &copy2018 - All rights reserved.
+             </span>
+          </div>
+
+          <div class="col-sm-5">
+            <ul class="list-inline justify-content-center">
+              
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Facebook</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Web</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Youtube</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Instagram</a>
+              </li>
+                
+              <b>|  </b>
+              
+
+            <!--EN href="" URL QUE DIRIJAN A CADA UNO DE LOS PUNTOS (QUITAR #)-->
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Privacy</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Contact</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#" target="_blank">Cookies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
